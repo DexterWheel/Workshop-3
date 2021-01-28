@@ -1,38 +1,5 @@
----
----
-title: "main"
-author: "Dexter Weighell"
-output:
-  bookdown::pdf_document2: default
-  bookdown::word_document2: default
-  bookdown::html_document2: default
----
----
-
-```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE, 
-                      warning = FALSE,
-                      message = FALSE,
-                      fig.retina = 3)
-```
-
-```{r packages and functions}
 library(tidyverse)
 library(tidyr)
-source("scripts/sum-sqr.R")
-source("scripts/data-summary.R")
-```
-
-
-
-
-## **Introduction**
-
-## **Methods**
-
-## **Results**
-
-``` {r import data analysis}
 
 chaff <- read.table("raw-data/chaff.txt", header = TRUE)
 
@@ -61,8 +28,3 @@ ggsave("figures/fig1.tiff",
        height = fig_h,
        units = units,
        dpi = dpi)
-
-fig1
-```
-
-## **Discussion**
